@@ -80,7 +80,6 @@ public class chat_with_bot extends AppCompatActivity {
                 }
             }
         });
-
         ReadMSG();
     }
 

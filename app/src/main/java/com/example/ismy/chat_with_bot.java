@@ -128,6 +128,7 @@ public class chat_with_bot extends AppCompatActivity {
     }
 
     private void ReadMSG(){
+
         mChat = new ArrayList<>();
         mChat.clear();
 
@@ -186,5 +187,11 @@ public class chat_with_bot extends AppCompatActivity {
         }else
         {}
         cursor.close();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ReadMSG();
     }
 }

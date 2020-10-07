@@ -4,12 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F3F3"
+    android:gravity="center"
+    android:orientation="vertical"
     android:padding="8dp"
     tools:context=".AllChat">
+
+    <Button
+        android:id="@+id/chatClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgraund_tekst_pismo"
+        android:padding="8dp"
+        android:text="Очистить чат" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_all"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
